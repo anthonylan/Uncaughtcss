@@ -1,0 +1,28 @@
+@media (min-width:1000px){
+    #sidebar{
+        transform: translateX(10px) !important;
+    }
+    #navbar{
+        display: none;
+    }
+    
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    color: #414857 !important;
+}
+.h{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #414857;
+    padding: 30px 0 0 0;
+}
+p{
+    color: #333;
+    font-weight: 500;
+}
+pre, code{
+    padding: 0;
+    margin-bottom: 0;
+}

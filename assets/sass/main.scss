@@ -1,0 +1,434 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900');
+$white: #fff;
+$dark:#454d5d;
+$black: rgba(0, 0, 0, .87);
+$mainColor: #00B5AD;
+$boxshadow: #eaeded;
+$offWhite: #f8f9f9;
+$gray: #50596c;
+$mainCF: #333;
+$blue:#2185d0;
+$red:#dd4b39;
+
+
+
+p{
+    color: #50596c !important;
+}
+
+#navbar{
+    width: 100%;
+    height: 50px;
+    background: $white;
+    box-shadow: 0 5px 10px -1px $boxshadow;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .logo{
+        float: left;
+        padding: 0 5px;
+        background: $mainColor;
+        color: $white;
+        font-weight: bolder;
+        font-size: 2.3rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .docs{
+        float: left;
+        padding: 15px 30px;
+        cursor: pointer;
+        color: $dark;
+        font-weight: bold;
+        &:hover{
+            color: $mainColor;
+        }
+        i{
+            padding-right: 10px;
+        }
+    }
+    ul{
+        float: right;
+        margin: 0;
+        li{
+            display: inline-block;
+            padding: 15px 10px;
+        }
+        .twitter{
+            padding: 5px;
+            font-size: 0.8rem;
+            border-radius: 3px;
+        }
+        .git{
+            background: $dark;
+            padding: 5px;
+            font-size: 0.8rem;
+            color: $white;
+            border-radius: 3px;
+        }
+    }
+  
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background: $white;
+    text-align: center;
+    overflow-x: hidden;
+    .cover{
+      margin-top: 70px;
+      padding-top: 50px;
+    }
+    h1{
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        color: $mainColor;
+    }
+    h6{
+        color: $dark;
+    }
+    .get-started{
+        display: inline-block;
+        padding-top: 10px;
+        .download{
+            padding: 10px 20px;
+            background: $mainColor;
+            border: 1px solid $mainColor;
+            color: $white;
+            margin: 0 20px;
+            transition: all ease-in-out .2s;
+            &:hover{
+                background: $white;
+                border: 1px solid $mainColor;
+                color: $mainColor;
+            }
+        }
+    }
+}
+@media (max-width:1000px){
+    #navbar {
+        position: fixed;
+        z-index: 99;
+        box-shadow: none;
+        li{
+            display: inline-block;
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            right: 10px;
+        }
+
+        .twitter{
+            display: none;
+        }
+       
+    }
+    #hero{
+        padding-top: 50px;
+        height: 70vh;
+    }
+}
+#section-hero{
+    text-align: center;
+    margin: 10px 0 50px 0;
+   
+    .description{
+        h6{
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        p{
+            color: lighten($dark, 30);
+            padding-top: .6rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+p{
+    line-height: 1.8rem;
+}
+
+#easy-to-learn{
+    margin: 50px 0;
+    padding-top: 40px;
+    p{
+        line-height: 1.8rem;
+        color: $gray;
+        font-weight: 400;
+    }
+ .card{
+     width: 100%;
+     height: auto;
+     margin-bottom: 20px;
+     padding-bottom: 0;
+ }
+ pre, code{
+     background: $white;
+     padding: 0;
+     margin-bottom: .8rem;
+ }
+ .row{
+     .col-4{
+         background: #f0f1f4;
+         border-radius: 2px;
+         text-align: center;
+         padding: 10px 0px;
+         margin: 20px 0;
+     }
+ }
+}
+
+#easy-customize{
+    padding: 50px 0;
+    .card{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+    pre, code{
+        background: $white;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .custom{
+        .btn.primary{
+            background: #00B5AD;
+            border: 1px solid #00B5AD;
+        }
+    }
+
+    strong{
+        color: #666;
+        display: block;
+        margin: 20px 0;
+    }
+    .top{
+        padding-top: 50px;
+        margin-top: 40px;
+    }
+    .wrapper{
+        padding: 40px;
+    }
+    p{
+        color: $gray;
+        font-weight: 400;
+    }
+   
+}
+
+#no-js{
+    padding: 40px 0;
+ 
+    p{
+        color: $gray;
+        font-weight: 400;
+    }
+   
+}
+.now{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    .btn.primary{
+        i{
+            padding-left: 10px;
+        }
+    }
+}
+
+
+
+#sidebar{
+    width: 270px;
+    background: $white;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    transform: translateX(-100%);
+    transition: all ease-in-out .3s;
+
+    ul{
+        li{
+            padding: 5px 0;
+            list-style: none;
+            a{
+                color: $gray;
+                padding: 5px;
+                display: block;
+                font-size: 0.9rem;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+        .li-head{
+            font-weight: 600;
+            color: $gray;
+        }
+        .active{
+            color: $mainColor !important;
+        }
+    }
+}
+
+#transparent{
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: none;
+    transition: all ease-in-out .3s;
+}
+
+
+
+@media (min-width:1000px){
+    #transparent{
+        display: none;
+    }
+    #container{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        padding-top: 20px;
+        overflow: auto;
+        .side{
+            flex-basis: 30%;
+        }
+        .content{
+            flex-basis: 70%;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+    }
+    #sidebar {
+        .logo-docs{
+            padding: 0 5px;
+            display: inline-block;
+            background: $mainColor;
+            color: $white;
+            font-weight: bolder;
+            font-size: 2.7rem;
+            font-family: 'Montserrat', sans-serif;
+            transform: translateX(40px);
+            margin-top: 10px;
+        }
+        
+    }
+  
+}
+@media (max-width:1000px){
+    #container{
+        width: 85%;
+        margin: 0 auto;
+        padding: 80px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    #sidebar{
+        .logo-docs{
+            display: none;
+        }
+    }
+
+   
+}
+.content{
+    overflow-x: scroll;
+    .download-now{
+        display: inline-block;
+        padding: 10px 20px;
+        background: $mainColor;
+        border: 1px solid $mainColor;
+        color: $white;
+        margin: 20px 0;
+        transition: all ease-in-out .2s;
+        border-radius: 4px;
+        &:hover{
+            background: darken($mainColor, 3);
+        }
+    }
+}
+
+
+#grid{
+    .row{
+        .col-1, .col-2, 
+        .col-3, .col-4, 
+        .col-5, .col-6, 
+         .col-7, .col-8,
+         .col-9, .col-9,
+         .col-10, .col-11,
+         .col-12  {
+            background: #f0f1f4;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px 0px;
+            margin: 10px 0;
+        }
+        overflow-x: hidden;
+    }
+
+    #contain{
+        .container,
+        .container-gap{
+            background: #f0f1f4;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px 0px;
+            margin: 10px 0; 
+        }
+    }
+    
+}
+#navi{
+    strong{
+        background: $gray;
+        color: $white;
+        margin-bottom: 20px;
+        display: inline-block;
+        font-weight: 300;
+        padding: 0 10px;
+    }
+}
+#alert{
+    overflow: hidden;
+}
+footer{
+    padding: 50px;
+    background: $white;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            display: inline-block;
+            padding: 10px 10px 10px 0;
+        }
+    }
+    a{
+        color: $dark;
+        &:hover{
+            text-decoration: underline;
+            color: $dark;
+        }
+    }
+    p{
+        color: lighten($gray, 30) !important;
+    }
+    .fa-heart{
+        color: $red;
+    }
+}
+
+

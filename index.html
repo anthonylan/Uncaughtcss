@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/prism.css">
+    <link rel="stylesheet" href="assets/css/uncaught.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Uncaught.css - A modern framework built with Flexbox</title>
+</head>
+<body>
+    
+
+    <div id="transparent"></div>
+
+    <nav id="navbar">
+        <div class="container-gap">
+        <a href="index.html" class="logo">
+            UC
+        </a>
+        <span class="docs" id="trigger"> <i class="fa fa-bars"></i>Docs </span>
+
+
+        <ul>
+            <li><a class="twitter-share-button"
+                href="https://twitter.com/intent/tweet" >
+              Tweet</a></li>
+            <li><a href="#" class="git"> <i class="fa fa-github"></i> Github</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div id="sidebar">
+        <ul>
+            <li> <span class="li-head"> <a href="getting-started.html">Getting Started</a> </span> </li>
+        </ul>
+        <ul>
+                <li> <span class="li-head">Elements </span></li>
+                <li> <a href="typography.html">Typography</a> </li>
+                <li> <a href="labels.html">Labels</a> </li>
+                <li> <a href="images.html">Images</a> </li>
+                <li> <a href="tables.html">Tables</a> </li>
+      
+              <li> <span class="li-head"> Layout </span> </li>
+              <li> <a href="grid.html">Grid</a> </li>
+              <li> <a href="navbar.html">Navbar</a> </li>
+              <li> <a href="responsive.html">Responsive</a> </li>
+      
+              <li> <span class="li-head"> Compontent </span> </li>
+              <li> <a href="alerts.html">Alerts</a> </li>
+              <li> <a href="badge.html">Badge</a> </li>
+              <li> <a href="buttons.html">Buttons</a> </li>
+              <li> <a href="cards.html">Card</a> </li>
+              <li> <a href="forms.html">Forms</a> </li>
+              <li> <a href="inputs.html">Inputs</a> </li>
+              <li> <a href="list.html">List</a> </li>
+              <li> <a href="steps.html">Steps</a> </li>
+              <li> <a href="modal.html">Modal</a> </li>
+              <li> <a href="pagination.html">Pagination</a> </li>
+            
+            </ul>
+    </div>
+
+    <div id="hero">
+        <div class="container">
+        <div class="cover">
+            <h1>Uncaught.css</h1>
+            <h6>A modern responsive front-end framework based on Flexbox</h6>
+            <div class="get-started">
+                    <a href="getting-started.html" class="download">Download</a>
+                    <a href="#" class="btn classic" id="trigger">View Docs</a>
+                </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+ <section id="section-hero">
+     <div class="container">
+         <div class="row">
+             <div class="col-3">
+                 <img src="assets/imgs/feather (2).png" alt="">
+                 <div class="description">
+                     <h6>Lightweight</h6>
+                     <p>Lightweight (~11KB Zip Archive) </p>
+                 </div>
+             </div>
+             <div class="col-3">
+                 <img src="assets/imgs/responsive.png" alt="">
+                 <div class="description">
+                        <h6>Responsive</h6>
+                        <p>Designed for mobile first </p>
+                    </div>
+             </div>
+             <div class="col-3">
+                 <img src="assets/imgs/css-3.png" alt="">
+                 <div class="description">
+                        <h6>Modern</h6>
+                        <p>Based on Flexbox </p>
+                    </div>
+             </div>
+             <div class="col-3">
+                 <img src="assets/imgs/github.png" alt="">
+                 <div class="description">
+                        <h6>Free</h6>
+                        <p>Open source on github</p>
+                    </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+
+ <section id="easy-to-learn">
+     <div class="container-gap">
+         <div class="row">
+             <div class="col-6">
+                 <h5>Simple Grid System</h5>
+                 <p>More concise syntax. The Class names are short and easy to remember. You don't have to struggle with remembering the names, just add the <strong>row</strong> class and then the number of columns you want. </p>
+             </div>
+             <div class="col-6">
+                 <div class="card">
+<script type="text/plain" class="language-markup">
+        <div class="row">
+            <div class="col-4">one</div>
+            <div class="col-4">two</div>
+            <div class="col-4">three</div>
+        </div>
+</script>
+                 </div>
+         
+          <div class="row">
+              <div class="col-4">one</div>
+              <div class="col-4">two</div>
+              <div class="col-4">three</div>
+          </div>
+             </div>
+           
+         </div>
+     </div>
+ </section>
+
+<section id="easy-customize">
+    <div class="container-gap">
+         <div class="row">
+             <div class="col-6">
+        <h5>Easy to customize</h5>
+<p>To overide default styles you don't need to add the !important rule. </p>
+
+                  
+<div class="card">
+    <script type="text/plain" class="language-markup">
+     <a href="#" class="btn primary">Overview</a>
+    </script>
+ </div>
+ <p>Simply set your own rule in your main css file.</p>
+<div class="card">
+    <pre>
+    <code class="language-css">
+    .btn.primary{
+        background: #00B5AD;
+        border: 1px solid #00B5AD;
+    }
+    </code>
+ </pre>
+</div>
+ </div>
+ <div class="col-6 top">
+     <div class="wrapper">
+            <strong>Before</strong>
+            <a href="#" class="btn primary">Overview</a>
+            <br>
+    <strong>After</strong>
+    <div class="custom">
+            <a href="#" class="btn primary">Overview</a>
+    </div>
+           
+     </div>
+      </div>
+         </div>
+     </div>
+ </section>
+
+
+<section id="no-js">
+    <div class="container-gap">
+            <h5>No JavaScript required</h5>
+            <p>With Uncaught.css there is no need to load an extra js file. For components like modal, toggle Navbar etc. that requires JavaScript to function, their code snippet are included in the docs so you just copy the code instead.
+           Which makes it is very easy to integrate in any JS environment.</p>
+            <p>We also include the Fontawesome 4.7.0 library in the uncaught.css file, but you can always upgrade it to that latest version.</p>
+
+
+    </div>
+    
+</section>
+
+
+
+<div class="now">
+        <a href="getting-started.html" class="btn primary">Get started <i class="fa fa-chevron-right"></i> </a>
+ </div>
+<footer>
+    <div class="container-gap">
+        <ul>
+            <li><a href="#">Github</a></li>
+            <li><a class="twitter-share-button"
+                href="https://twitter.com/intent/tweet" >
+              Tweet</a></li>
+            <li>Version 0.1.0</li>
+        </ul>
+        <p>Designed and built with <i class="fa fa-heart"></i> by <a href="https://twitter.com/anthonyxcharles">Anthony Charles</a>. Licensed under the  <a href="#">MIT Licensed</a> </p>
+    </div>
+</footer>
+
+
+ <script src="js/prism.js"></script>
+ <script src="js/main.js"></script>
+</body>
+</html>
