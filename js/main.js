@@ -22,7 +22,7 @@ function closeNav(){
 
 
 let gitLink = document.querySelector('.git').addEventListener('click', () => {
-    location.assign('https://github.com/anthonylan/uncaught.css');
+    location.assign('https://github.com/anthonylan/uncaught');
 })
 
 
