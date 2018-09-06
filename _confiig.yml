@@ -99,8 +99,8 @@ prose:
     - /js
   
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-seo-tag
+gems:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-seo-tag
 
